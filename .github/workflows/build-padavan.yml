@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: K2P-5.0
+        TNAME: n56u_base
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/.unsupported/$TNAME.config ] ; then
